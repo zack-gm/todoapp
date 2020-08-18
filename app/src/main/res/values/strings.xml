@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">ToDoApp</string>
+
+    <string name="task_completed">completed</string>
+    <string name="task_performed">performed</string>
+
+    <string name="user_name">Name</string>
+    <string name="user_username">Username</string>
+    <string name="user_email">Email</string>
+    <string name="user_address">Address</string>
+    <string name="user_street">Street</string>
+    <string name="user_suite">Suite</string>
+    <string name="user_city">City</string>
+    <string name="user_zipcode">Zipcode</string>
+    <string name="user_geo">Geo</string>
+    <string name="user_geo_lat">lat</string>
+    <string name="user_geo_lng">lng</string>
+    <string name="user_phone">Phone</string>
+    <string name="user_website">Website</string>
+    <string name="user_company">Company</string>
+    <string name="user_company_name">Name</string>
+    <string name="user_company_catchPhrase">CatchPhrase</string>
+    <string name="user_company_bs">bs</string>
+</resources>

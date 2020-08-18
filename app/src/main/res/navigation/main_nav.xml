@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_navigator"
+    app:startDestination="@id/pagerFragment">
+
+    <fragment
+        android:id="@+id/userFragment"
+        android:name="com.example.todoapp.presentation.fragment.UserFragment"
+        android:label="UserFragment"
+        tools:layout="@layout/fragment_user">
+        <action
+            android:id="@+id/action_userFragment_to_userDatailFragment"
+            app:destination="@id/userDatailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/taskFragment"
+        android:name="com.example.todoapp.presentation.fragment.TaskFragment"
+        android:label="TaskFragment"
+        tools:layout="@layout/fragment_task"/>
+    <fragment
+        android:id="@+id/userDatailFragment"
+        android:name="com.example.todoapp.presentation.fragment.UserDatailFragment"
+        android:label="UserDatailFragment"
+        tools:layout="@layout/fragment_detail"/>
+    <fragment
+        android:id="@+id/pagerFragment"
+        android:name="com.example.todoapp.presentation.fragment.PagerFragment"
+        android:label="PagerFragment"
+        tools:layout="@layout/fragment_pager">
+        <action
+            android:id="@+id/action_pagerFragment_to_userFragment"
+            app:destination="@id/userFragment" />
+        <action
+            android:id="@+id/action_pagerFragment_to_taskFragment"
+            app:destination="@id/taskFragment" />
+    </fragment>
+</navigation>
